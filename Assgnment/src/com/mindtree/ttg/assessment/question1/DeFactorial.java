@@ -18,8 +18,21 @@ public class DeFactorial {
 	 *         and sum of digits in the factorial of the number.
 	 */
 	public long calcDeFactorial(int n) {
-
-		return 0;
+		int f=1,c=0,s=0,r,product;
+		for(int i=1;i<=n;i++)
+		{
+			f=f*i;
+			System.out.println(f);
+		}
+		while(f!=0)
+		{	
+			r=f%10;
+			s=s+r;
+			f=f/10;
+			c++;
+		}
+		product=s*c;
+		return product;
 	}
 
 }

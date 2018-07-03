@@ -22,7 +22,7 @@ public class DeFactorial {
 		for(int i=1;i<=n;i++)
 		{
 			f=f*i;
-			System.out.println(f);
+		
 		}
 		while(f!=0)
 		{	

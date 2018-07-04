@@ -19,10 +19,25 @@ public class FibonacciPrime {
  * input array is a Fibonacci prime else ‘n’.
  */
 	public String isFibPrime(int[] list) {
-		int max,f,f1=0,f2=1;
-		max=list[0];
+		int j,max,f,f1=0,f2=1;
 		for(int i=0;i<list.length;i++)
 		{
+			for( j=2;j<list.length;j++)
+			{
+				if(list[i]%j==0)
+				{
+					break;
+				}
+			}
+			if(list[i]==j)
+			{
+				
+			}
+		}
+		
+		max=list[0];
+		for(int i=0;i<list.length;i++)
+		{	
 			if(max<=list[i])
 			{
 				max=list[i];
